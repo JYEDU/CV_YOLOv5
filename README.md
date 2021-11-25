@@ -17,11 +17,11 @@
     - 컴퓨터 비전 응용에 필요한 기본적인 정보를 제공하기 위한 계산 모델을 개발하는 것을 목표로 함
 
 3. 참고자료
-    - [Paper](https://pjreddie.com/media/files/papers/yolo_1.pdf) You look only once : Unified, Real-Time Object Detection
-    - [Youtube](https://www.youtube.com/watch?v=NM6lrxy0bxs) You look only once : Unified, Real-Time Object Detection youtube
-    - [Github](https://github.com/ultralytics/yolov5) Yolov5 Repository
-    - [Github](https://github.com/trancis31444/2D-Object-Detection-leaderboard) 2D-Object-Detection-leaderboard Repository
-    - [Youtube](https://www.youtube.com/watch?v=V1lnjEATIlU) 2D Object Detection 챌린지 및 베이스라인 설명
+    - [[Paper](https://pjreddie.com/media/files/papers/yolo_1.pdf)] You look only once : Unified, Real-Time Object Detection
+    - [[Youtube](https://www.youtube.com/watch?v=NM6lrxy0bxs)] You look only once : Unified, Real-Time Object Detection youtube
+    - [[Github](https://github.com/ultralytics/yolov5)] Yolov5 Repository
+    - [[Github](https://github.com/trancis31444/2D-Object-Detection-leaderboard)] 2D-Object-Detection-leaderboard Repository
+    - [[Youtube](https://www.youtube.com/watch?v=V1lnjEATIlU)] 2D Object Detection 챌린지 및 베이스라인 설명
 
 4. 제출할 파일 : 
     - eval.ai 리더보드상의 기록 캡쳐본, 
