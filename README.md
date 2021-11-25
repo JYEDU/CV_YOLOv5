@@ -1,4 +1,5 @@
 # 2021 Computer Vision Term Project
+4개 분야 선정하여 베이스라인 찍기
 ## My Repository
 1. [2D Objection Detection](https://github.com/JYEDU/CV_YOLOv5)
 2. [Scene Text Recognition](https://github.com/JYEDU/CV_Scene-Text-Recognition)
