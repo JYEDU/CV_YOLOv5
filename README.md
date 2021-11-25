@@ -6,7 +6,7 @@
 3. [Super Resolution](https://github.com/JYEDU/CV_Super-Resolution)
 4. [Image to Image(Ther2RGB)](https://github.com/JYEDU/CV_Image-To-Image)
 
-# Computer Vision Term Project
+
 ## 2D Objection Detection (YOLOv5)
 
 1. Challenge Leaderboard
