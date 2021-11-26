@@ -12,6 +12,9 @@
 1. Challenge Leaderboard
     - [LINK](http://203.250.148.129:3088/web/challenges/challenge-page/24/overview)
     
+    ![image](https://user-images.githubusercontent.com/87462769/143525039-785636c1-5e03-4c90-91a7-63dff540eea2.png)
+
+    
 2. Object Detection 챌린지 개요
     - 비디오나 사진과 같은 디지털 영상에서 사람, 동물, 차와 같은 특정 클래스의 물체의 인스턴스를 탐지하는 중요한 컴퓨터 비전 작업 중 하나
     - 컴퓨터 비전 응용에 필요한 기본적인 정보를 제공하기 위한 계산 모델을 개발하는 것을 목표로 함
