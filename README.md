@@ -63,4 +63,4 @@
 ### ② 베이스라인을 찍기 위한 나의 repository
 [[Github](https://github.com/JYEDU/CV_YOLOv5)]
 ### ③ 제출 과정에 대한 동영상 링크(베이스라인 알고리즘 설명 및 베이스라인을 찍기 위한 과정을 설명)
-[[Youtube](https://youtu.be/o_K5NsPXwTU)]
+[[Youtube](https://youtu.be/jok4f-el3gw)]
