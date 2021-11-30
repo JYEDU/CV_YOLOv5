@@ -55,6 +55,72 @@
     - [[Github](https://github.com/trancis31444/2D-Object-Detection-leaderboard)] 2D-Object-Detection-leaderboard Repository
     - [[Youtube](https://www.youtube.com/watch?v=V1lnjEATIlU)] 2D Object Detection 챌린지 및 베이스라인 설명
 
+<br/><br/>
+
+## 원복 코드
+1. 저장소 만들기 및 데이터 다운로드
+```
+# git clone
+git clone https://github.com/ultralytics/yolov5.git
+
+# change directory
+cd yolov5
+
+# install library
+pip install –r requirements.txt
+pip install sklearn
+
+# download dataset
+## for train and validation
+wget http://images.cocodataset.org/zips/train2017.zip
+## for test
+wget http://images.cocodataset.org/zips/val2017.zip
+## for label
+wget https://github.com/ultralytics/yolov5/releases/download/v1.0/coco2017labels.zip
+```
+
+2. coco.yaml 파일에 맞게 데이터 셋 위치하고, python 이용하여 이미지 리스트(.txt) 만들기
+```python
+# make txt file
+from glob import glob
+from sklearn.model_selection import train_test_split
+
+## load img_list
+img_list = glob(“../dataset/coco/images/train2017/*.jpg")
+print("img list : ", len(img_list))
+
+## Divide img_list into train_img_list and vali_img_list
+train_img_list, val_img_list = train_test_split(img_list, test_size=0.1, random_state=21, shuffle=False)
+print("train img list : ", len(train_img_list)) 
+print("val img list : ", len(val_img_list))
+
+## make the txt file about train_img_list
+with open(“../dataset/coco/train2017.txt", 'w') as f:
+    f.write('\n'.join(train_img_list) + '\n')
+    
+## make the txt file about val_img_list 
+with open(“../dataset/coco/val2017.txt", 'w') as f:
+    f.write('\n'.join(val_img_list) + '\n')
+
+## load test_img_list
+test_img_list = glob(“../dataset/coco/images/val2017/*.jpg")
+print(“test img list : ", len(test_img_list))
+
+## make the txt file about test_img_list
+with open(“../dataset/coco/test-dev2017.txt", 'w') as f:
+    f.write('\n'.join(test_img_list) + '\n')
+```
+
+3. 모델 훈련 및 테스트
+```
+# train
+python train.py --img 640 --batch 16 --epochs 5 --weights yolov5x.pt --data coco.yaml --cache --name $name
+
+# test
+python val.py --img 640 --weights yolov5x.pt --data coco.yaml --iou 0.65 --half --save-json --task test  --name $name
+```
+
+
 <br/><br/><br/><br/>
  
 ## 원복 과정에 대한 챌린지 제출 파일
